@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomPopupViewController" customModule="EventPopUp" customModuleProvider="target">
+            <connections>
+                <outlet property="detailButton" destination="nyj-GT-aDL" id="N1q-Dg-BSd"/>
+                <outlet property="view" destination="Wu0-Ci-bci" id="Q05-pV-z7u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wu0-Ci-bci">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="325"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWO-u3-xub">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="325"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eventImg" translatesAutoresizingMaskIntoConstraints="NO" id="c5J-yG-su6">
+                            <rect key="frame" x="0.0" y="0.0" width="232" height="325"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyj-GT-aDL">
+                            <rect key="frame" x="10" y="262" width="202" height="46"/>
+                            <color key="backgroundColor" systemColor="labelColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="0HT-nr-bJq"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="자세히 보기"/>
+                            <connections>
+                                <action selector="detailAction:" destination="-1" eventType="touchUpInside" id="lya-Z2-Ni9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="c5J-yG-su6" secondAttribute="trailing" id="2k4-Vd-PZc"/>
+                        <constraint firstAttribute="trailing" secondItem="nyj-GT-aDL" secondAttribute="trailing" constant="20" id="4Q6-gg-tp9"/>
+                        <constraint firstAttribute="bottom" secondItem="c5J-yG-su6" secondAttribute="bottom" id="51c-GW-gsN"/>
+                        <constraint firstItem="nyj-GT-aDL" firstAttribute="leading" secondItem="xWO-u3-xub" secondAttribute="leading" constant="10" id="Pu1-ps-OSR"/>
+                        <constraint firstItem="c5J-yG-su6" firstAttribute="leading" secondItem="xWO-u3-xub" secondAttribute="leading" id="lmT-e9-nIi"/>
+                        <constraint firstItem="c5J-yG-su6" firstAttribute="top" secondItem="xWO-u3-xub" secondAttribute="top" id="msD-TF-yh5"/>
+                        <constraint firstAttribute="bottom" secondItem="nyj-GT-aDL" secondAttribute="bottom" constant="17" id="pB5-Rq-nUH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hOX-G3-lCz"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xWO-u3-xub" firstAttribute="leading" secondItem="Wu0-Ci-bci" secondAttribute="leading" id="JNE-xW-l47"/>
+                <constraint firstAttribute="trailing" secondItem="xWO-u3-xub" secondAttribute="trailing" constant="-10" id="Sg7-2B-hcW"/>
+                <constraint firstAttribute="bottom" secondItem="xWO-u3-xub" secondAttribute="bottom" id="gF0-PV-euL"/>
+                <constraint firstItem="xWO-u3-xub" firstAttribute="top" secondItem="Wu0-Ci-bci" secondAttribute="top" id="tkD-Vu-fwA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="295.6521739130435" y="409.48660714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eventImg" width="273" height="335"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
