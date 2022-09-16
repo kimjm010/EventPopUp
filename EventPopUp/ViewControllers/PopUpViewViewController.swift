@@ -14,15 +14,15 @@ class PopUpViewViewController: UIViewController {
     
     // MARK: - Vars
     
+    // CustomPopupVC에서 "자세히 보기"버튼 클릭시 이벤트를 전달하기 위한 클로져
     static var eventReceived: ((Bool) -> Void)?
     
     
-    @IBAction func showImage(_ sender: Any) {
-        showCustomDialog()
-    }
+    // MARK: - Create Popup Event
     
-    
-    func showCustomDialog(animated: Bool = true) {
+    /// popup event를 생성하는 메소드
+    /// - Parameter animated: 애니메이션 여부
+    private func showCustomDialog(animated: Bool = true) {
 
         // Create a custom view controller
         let customVC = CustomPopupViewController(nibName: "CustomPopupViewController", bundle: nil)
@@ -75,6 +75,8 @@ class PopUpViewViewController: UIViewController {
     }
     
     
+    /// view가 다시 나타나는 시점에 isPopup값에 따라 팝업창을 표시할지 결정
+    /// - Parameter animated: 애니메이션 여부
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

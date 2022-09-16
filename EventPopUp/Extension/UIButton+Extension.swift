@@ -10,6 +10,8 @@ import UIKit
 
 
 extension UIButton {
+    
+    // 버튼의 모양 변경 메소드
     func setButtonTheme() {
         self.layer.cornerRadius = self.frame.height / 2
     }

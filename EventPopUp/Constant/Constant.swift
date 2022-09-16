@@ -7,5 +7,5 @@
 
 import Foundation
 
-
+// popup 유저 셋팅 값을 저장하는 속성
 public let kUSERPOPUPSETTINGS = "kUSERPOPUPSETTINGS"

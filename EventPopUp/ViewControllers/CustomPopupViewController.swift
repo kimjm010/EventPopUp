@@ -16,6 +16,8 @@ class CustomPopupViewController: UIViewController {
     
     // MARK: - IBActions
     
+    /// 버튼 클릭시 completion을 전달
+    /// - Parameter sender: "자세히 보기"버튼
     @IBAction func detailAction(_ sender: Any) {
         
         let isSelected = true

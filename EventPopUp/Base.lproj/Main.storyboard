@@ -63,9 +63,7 @@
                             <constraint firstItem="Hsj-2s-fgb" firstAttribute="leading" secondItem="92b-mD-2kA" secondAttribute="leading" id="yzd-MG-BkQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Q1M-gf-0nA">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="s6c-pg-3XL"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Q1M-gf-0nA"/>
                     <connections>
                         <outlet property="webView" destination="Hsj-2s-fgb" id="qxN-ti-JOB"/>
                     </connections>
