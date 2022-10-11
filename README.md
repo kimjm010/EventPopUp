@@ -20,3 +20,4 @@
 ## App Screenshot
 #### 앱 구동 영상입니다.
 ### 1. 구동영상
+![EventPopup](https://user-images.githubusercontent.com/87006369/194991938-2e03d613-44d9-4f8c-8da9-bd25d54841e8.gif)
