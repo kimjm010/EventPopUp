@@ -20,4 +20,3 @@
 ## App Screenshot
 #### 앱 구동 영상입니다.
 ### 1. 구동영상
-![Filtering_](https://user-images.githubusercontent.com/79038724/164055173-c7e4cd61-ea5f-4109-b1b9-9676106dd01b.gif)
